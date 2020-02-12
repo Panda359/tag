@@ -12,7 +12,7 @@ from googletrans import Translator
 botStart = time.time()
 
 #third
-cl = LINE()
+cl = LINE('fSTr2G4/t3EQ2vocVfa7xSRDUWDJVkKtPYFOTfQOhSE+H4XS9iir2Scv/jjqNAl4OC3fZlgTSHPvEAv0SC49WkhLza2J3qWAWJ5BotlBD1brgoCWAjJT4KGZDNeABUBMHgcn68Ofb+t7srQviEYjOgdB04t89/1O/w1cDnyilFU=')
 channelToken = cl.getChannelResult()
 cl.log("TOKEN:" + str(cl.authToken))
 
@@ -36,7 +36,7 @@ wait2 = {
 setTime = {}
 setTime = wait2['setTime']
 admin=[clMID]
-master=['5af607621bf09655d9b67f2a5292c67f']
+master=['91aba13ad024feeb462ae8ae2a72a7ba']
 msg_dict = {}
 bl = [""]
 def cTime_to_datetime(unixtime):
@@ -104,7 +104,7 @@ def lineBot(op):
         if op.type == 0:
             return
         if op.type == 5:
-            ge = ("5af607621bf09655d9b67f2a5292c67f")
+            ge = ("91aba13ad024feeb462ae8ae2a72a7ba")
             contact = cl.getContact(op.param1)
             print ("[ ADDNEWFRIEND ] เพิ่มชื่อเพื่อน: " + contact.displayName)
             cl.sendMessage(ge,"《การแจ้งเตือนเพื่อน \ nเพิ่มเพื่อน:" + contact.displayName + "\n》เพื่อนMid:\n" + op.param1)
@@ -117,7 +117,7 @@ def lineBot(op):
             group = cl.getGroup(op.param1)
             contact = cl.getContact(op.param2)
         if op.type == 13:
-            ge = ("5af607621bf09655d9b67f2a5292c67f")
+            ge = ("91aba13ad024feeb462ae8ae2a72a7ba")
             contact1 = cl.getContact(op.param2)
             contact2 = cl.getContact(op.param3)
             group = cl.getGroup(op.param1)
@@ -176,7 +176,7 @@ def lineBot(op):
                     pass
 #--                         
         elif op.type == 19:
-            ge = ("5af607621bf09655d9b67f2a5292c67f")
+            ge = ("91aba13ad024feeb462ae8ae2a72a7ba")
             contact1 = cl.getContact(op.param2)
             group = cl.getGroup(op.param1)
             contact2 = cl.getContact(op.param3)
