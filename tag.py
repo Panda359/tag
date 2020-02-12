@@ -104,7 +104,7 @@ def lineBot(op):
         if op.type == 0:
             return
         if op.type == 5:
-            ge = ("u039d3e7645cdf9b119ae0bd765aec8db")
+            ge = ("5af607621bf09655d9b67f2a5292c67f")
             contact = cl.getContact(op.param1)
             print ("[ ADDNEWFRIEND ] เพิ่มชื่อเพื่อน: " + contact.displayName)
             cl.sendMessage(ge,"《การแจ้งเตือนเพื่อน \ nเพิ่มเพื่อน:" + contact.displayName + "\n》เพื่อนMid:\n" + op.param1)
@@ -117,7 +117,7 @@ def lineBot(op):
             group = cl.getGroup(op.param1)
             contact = cl.getContact(op.param2)
         if op.type == 13:
-            ge = ("u039d3e7645cdf9b119ae0bd765aec8db")
+            ge = ("5af607621bf09655d9b67f2a5292c67f")
             contact1 = cl.getContact(op.param2)
             contact2 = cl.getContact(op.param3)
             group = cl.getGroup(op.param1)
@@ -176,7 +176,7 @@ def lineBot(op):
                     pass
 #--                         
         elif op.type == 19:
-            ge = ("u039d3e7645cdf9b119ae0bd765aec8db")
+            ge = ("5af607621bf09655d9b67f2a5292c67f")
             contact1 = cl.getContact(op.param2)
             group = cl.getGroup(op.param1)
             contact2 = cl.getContact(op.param3)
